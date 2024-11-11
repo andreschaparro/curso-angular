@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PadreComponent } from './padre/padre.component';
-import { HijoComponent } from './hijo/padre.component';
+import { HijoComponent } from './hijo/hijo.component';
 
 // @ es un decorador
 // @NgModule nos permite configurar el módulo
