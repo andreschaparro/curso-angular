@@ -11,4 +11,4 @@ Un componente esta formado por cuatro archivos, siendo tres de ellos obligatorio
 - `nombre-del-componente.component.ts`: contiene el controlador y el modelo.
 - `nombre-del-componente.component.html`: contiene la plantilla para la vista.
 - `nombre-del-componente.component.css`: contiene el estilo para la vista.
-- `nombre-del-componente.component.spec.ts`: es un archivo opcional para testing. Borrarlos.
+- `nombre-del-componente.component.spec.ts`: es un archivo opcional para testing. Borrarlo.
