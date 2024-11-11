@@ -8,7 +8,7 @@
 - [git-scm](https://git-scm.com/).
 - [Node.js (LTS)](https://nodejs.org/en).
 - [Globally Installing TypeScript via npm](https://www.typescriptlang.org/download/).
-- [Install the Angular CLI](https://angular.dev/tools/cli/setup-local).
+- [Angular 16 or 17 (LTS)](https://www.npmjs.com/package/@angular/cli?activeTab=versions).
 - [Download Postman](https://www.postman.com/downloads/).
 - [Bootstrap install via package manager](https://getbootstrap.com/).
 - [Install Angular Material](https://material.angular.io/guide/getting-started).
