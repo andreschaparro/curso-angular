@@ -10,5 +10,5 @@ Ya existen algunas por defecto, pero se pueden crear personalizadas.
 
 Un servicio esta formado por dos archivos, siendo uno de ellos obligatorio:
 
-- `nombre-del-componente.directive.ts`: contiene la directiva.
-- `nombre-del-componente.directive.spec.ts`: es un archivo opcional para testing. Borrarlo.
+- `nombre-de-la-directiva.directive.ts`: contiene la directiva.
+- `nombre-de-la-directiva.directive.spec.ts`: es un archivo opcional para testing. Borrarlo.

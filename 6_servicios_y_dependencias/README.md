@@ -8,5 +8,5 @@ Permiten inyectar una misma lógica a varios componentes (para reutilizar códig
 
 Un servicio esta formado por dos archivos, siendo uno de ellos obligatorio:
 
-- `nombre-del-componente.service.ts`: contiene el servicio.
-- `nombre-del-componente.service.spec.ts`: es un archivo opcional para testing. Borrarlo.
+- `nombre-del-servicio.service.ts`: contiene el servicio.
+- `nombre-del-servicio.service.spec.ts`: es un archivo opcional para testing. Borrarlo.

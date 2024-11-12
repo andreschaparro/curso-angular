@@ -1,0 +1,24 @@
+<!-- Botones del contador en el hijo -->
+<div>
+    <button (click)="incrementarDesdeElHijo()">Incrementar</button>
+    <button (click)="decrementarDesdeElHijo()">Decrementar</button>
+</div>
+<hr>
+
+<h1>El mensaje recibido desde el padre es:</h1>
+<!-- Uso de un pipe personalizado -->
+<p>{{ recibeHijo | miPipePersonalizado }}</p>
+<!-- Aquí se ve la inmutabilidad -->
+<p>{{ recibeHijo }}</p>
+
+<div>
+    <label for="entrada">Escribí un mensaje para enviarle al padre:</label>
+
+    <!-- Esto es un formulario de un solo campo -->
+    <!-- Por lo que, hay que vincular el string enviaHijo con el input utilizando un two way binding o [(ngModel)] -->
+    <!-- Importar FormsModule y ReactiveFormsModule en app.module.ts para que funcione -->
+    <input type="text" id="entrada" [(ngModel)]="enviaHijo">
+
+    <!-- Event binding para enviar el string -->
+    <button type="button" (click)="enviarMensaje()">Enviar</button>
+</div>

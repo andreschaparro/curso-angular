@@ -1,0 +1,23 @@
+<h1>Contador:</h1>
+<p>{{ valorContador }}</p>
+
+<!-- El atributo recibeHijo se actualiza con el valor de enviaPadre -->
+<!-- El evento emmiterHijo se recibe con el metodo recibirMensaje -->
+<!-- Los eventos recibidos desde el hijo actualizan el valor del contador que está en el padre -->
+<app-hijo [recibeHijo]="enviaPadre" (emitterHijo)="recibirMensaje($event)" (emitterIncrementar)="incrementar()"
+    (emitterDecrementar)="decrementar()" />
+<hr>
+
+<h1>El mensaje recibido desde el hijo es:</h1>
+<p>{{ recibePadre }}</p>
+
+<hr>
+<h1 appEstiloHermanos>{{nombre }}</h1>
+<button type="button" (click)="saludar()">Saludar</button>
+<button type="button" (click)="preguntarPorHijo()">Preguntar por el Hijo</button>
+
+<!-- Uso de pipes predefinidos -->
+<h2>Fecha de hoy: {{fecha | date: 'dd/MM/yyyy'}}</h2>
+<h2>El dolar cotiza a: {{dolar | currency}}</h2>
+<h2>El número PI: {{pi | number: '1.2-2'}}</h2>
+<h2>El porcentaje es: {{factor |percent}}</h2>
