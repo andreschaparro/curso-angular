@@ -2,8 +2,8 @@
 
 ## @input
 
-Se emplea para que un componente padre le envíe datos a un hijo.
+Se emplea para que un hijo reciba datos del padre.
 
 ## @Output y EventEmitter
 
-Se emplean para que un componente padre escuche y reciba eventos de un hijo.
+Se emplean para que un componente hijo envide datos mediante eventos al padre.
