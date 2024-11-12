@@ -1,4 +1,4 @@
-# Componentes
+# Capítulo 3: componentes
 
 Los componentes representan elementos de la UI (interfaz de usuario) que utilizan el patrón MVC (Modelo-Vista-Controlador).
 

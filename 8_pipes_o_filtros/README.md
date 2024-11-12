@@ -1,4 +1,4 @@
-# Pipes o filtros
+# Capítulo 8: pipes o filtros
 
 Permiten formatear y transformar como se ven los datos en la vista sin modificarlos. Utilizan el símbolo `|`.
 

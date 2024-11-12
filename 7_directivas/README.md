@@ -1,4 +1,4 @@
-# Directivas
+# Capítulo 7: directivas
 
 Son instrucciones que van en el HTML y nos permiten modificar el DOM de forma declarativa.
 

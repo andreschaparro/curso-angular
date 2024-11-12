@@ -1,4 +1,4 @@
-# Comunicación entre Componentes
+# Capítulo 5: comunicación entre componentes
 
 ## @input
 

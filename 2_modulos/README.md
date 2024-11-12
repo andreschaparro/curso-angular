@@ -1,4 +1,4 @@
-# Módulos
+# Capítulo 2: módulos
 
 Los módulos permiten organizar la aplicación y no tienen vista (no son visibles).
 

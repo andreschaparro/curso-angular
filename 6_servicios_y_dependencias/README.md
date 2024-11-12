@@ -1,4 +1,4 @@
-# Servicios
+# Capítulo 6: servicios
 
 Permiten inyectar una misma lógica a varios componentes (para reutilizar código) y proveen un mecanismo pivot para intercambiar información entre componentes.
 
