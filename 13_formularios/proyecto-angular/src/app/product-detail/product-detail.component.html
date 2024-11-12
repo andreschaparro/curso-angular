@@ -1,0 +1,13 @@
+<!-- Uso de ng-container como contenedor similar al fragment de react -->
+<!-- Uso de ngIf para que se muestre primero un mensaje de cargando y luego la información -->
+<ng-container *ngIf="!loading">
+    <h1>Producto: {{ product?.name }}</h1>
+    <!-- Uso de [ngStyle] para hacer lo mismo se hizo en el componente products con [ngClass] -->
+    <h2 [ngStyle]="{'color': color}">Precio: {{ product?.price | currency }}</h2>
+    <!-- Uso de ngIf para que no se muestre Descripción: si la misma no existe -->
+    <h3 *ngIf="product?.description">Descripción: {{ product?.description }}</h3>
+</ng-container>
+
+<ng-container *ngIf="loading">
+    <i style="color: blue;"> Cargando Información...</i>
+</ng-container>
