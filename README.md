@@ -1,4 +1,4 @@
-# Curso de ANGULAR 16/17
+# Curso de ANGULAR
 
 ## Software a instalar
 
@@ -42,6 +42,5 @@
 Repositorio hecho en base al material de:
 
 - [ANGULAR desde cero | Curso tutorial completo gratis por Sergie Code](https://www.youtube.com/watch?v=soInCF7nbDw).
-- [NOVEDADES ANGULAR 18 | Curso tutorial completo gratis por Sergie Code](https://www.youtube.com/watch?v=Qmci2rvN4F8).
 
 Agradece al colega Sergie Code el Ing. Andres Chaparro.
