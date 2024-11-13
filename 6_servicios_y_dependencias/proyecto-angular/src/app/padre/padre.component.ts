@@ -9,7 +9,7 @@ import { ServicioFamiliarService } from '../servicio-familiar.service';
 
 export class PadreComponent implements OnInit {
 
-  // Alternativa para inyecta un servicio utilizando inject
+  // Alternativa para inyectar un servicio utilizando
   _servicioFamiliar = inject(ServicioFamiliarService);
 
   ngOnInit(): void {

@@ -1,0 +1,43 @@
+<!-- Formulario reactivo -->
+<div class="container">
+    <!-- Con formGroup se conecta el formulario creado en TS con el de la vista -->
+    <form [formGroup]="contactForm" (ngSubmit)="send()">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">Nombre</label>
+            <!-- Con formControlName se conectan los elementos creados en TS con los de la vista -->
+            <!-- En el navegador el error se llama minlength y no minLength, verificarlo siempre cuando se trabaja con validadores -->
+            <input type="text" class="form-control" id="firstName" formControlName="firstName"
+                [ngClass]="{'is-invalid': hasErrors('firstName','required') || hasErrors('firstName','minlength')}">
+            <div class="text-danger" *ngIf="hasErrors('firstName','required')">Nombre requerido</div>
+            <div class="text-danger" *ngIf="hasErrors('firstName','minlength')">Nombre requere mínimo 3 caracteres</div>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="lastName" formControlName="lastName"
+                [ngClass]="{'is-invalid': hasErrors('lastName','required') || hasErrors('lastName','minlength')}">
+            <div class="text-danger" *ngIf="hasErrors('lastName','required')">Apellido requerido</div>
+            <div class="text-danger" *ngIf="hasErrors('lastName','minlength')">Apellido requere mínimo 3 caracteres
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="documenType" class="form-label">Tipo de Documento:</label>
+            <select class="form-select" id="documenType" formControlName="documenType">
+                <option value="DNI">DNI</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Cedula">Cedula</option>
+            </select>
+        </div>
+        <div class="mb-3" *ngIf="showDocument">
+            <!-- Agregamos el componente hijo y le pasamos el documenType -->
+            <document-input [activeDocumentType]="activeDocumentType" />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email"
+                [ngClass]="{'is-invalid': hasErrors('email','required') || hasErrors('email','email')}">
+            <div class="text-danger" *ngIf="hasErrors('email','required')">Email requerido</div>
+            <div class="text-danger" *ngIf="hasErrors('email','email')">Email formato inválido</div>
+        </div>
+        <button type=" submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>

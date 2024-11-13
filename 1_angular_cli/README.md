@@ -14,7 +14,7 @@
 
 1. Ejecutar `npm unistall -g @angular/cli`
 
-## Crear una app
+## Crear un proyecto
 
 1. Ejecutar `ng new proyecto-angular`.
 2. Seleccionar `y` para agregar `Angular routing`.

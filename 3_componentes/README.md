@@ -1,8 +1,6 @@
 # Capítulo 3: componentes
 
-Los componentes representan elementos de la UI (interfaz de usuario) que utilizan el patrón MVC (Modelo-Vista-Controlador).
-
-# Crear un componente
+## Crear un componente
 
 1. Ejecutar `ng generate component nombre-del-componente` o de forma resumida `ng g c nombre-del-componente`.
 

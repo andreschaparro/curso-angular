@@ -1,0 +1,8 @@
+<form [formGroup]="documentForm">
+    <label for="document" class="form-label">{{ documentType }}</label>
+    <input type="text" class="form-control" id="document" formControlName="document"
+        [ngClass]="{'is-invalid': hasErrors('document','required') || hasErrors('dni','minlength')}">
+    <div class="text-danger" *ngIf="hasErrors('document','required')">{{ documentType }} requerido</div>
+    <div class="text-danger" *ngIf="hasErrors('document','minlength')">{{ documentType }} requere mínimo 1
+        carácter</div>
+</form>
