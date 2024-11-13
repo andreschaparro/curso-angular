@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>List of Products:</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Price</th>
+                <th scope="col">Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Estructura de control ngFor para recorrer productsList y generar las filas de la tabla dinámicamente -->
+            <tr *ngFor="let product of productsList">
+                <th scope="row">{{ product.id }}</th>
+                <td>{{ product.title }}</td>
+                <!-- Uso de [ngClass] para modificar la clase CSS del precio si su valor es mayor a 200 -->
+                <td [ngClass]="{'red': product.price > 200}">{{ product.price | currency}}</td>
+                <td>
+                    <button class="btn btn-outline-primary" [routerLink]="['/products', product.id]">View</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

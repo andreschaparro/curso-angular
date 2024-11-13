@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+// Permite que se pueda inyectar el servicio 
 @Injectable({
   providedIn: 'root'
 })
