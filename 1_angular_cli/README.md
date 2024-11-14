@@ -12,7 +12,7 @@
 
 ## Desinstalar todas las versiones
 
-1. Ejecutar `npm unistall -g @angular/cli`
+1. Ejecutar `npm uninstall -g @angular/cli`
 
 ## Crear un proyecto
 
