@@ -35,8 +35,6 @@
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph).
 - [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets).
 - [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets).
-- [Angular Snippets (Version 18)](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2).
-- [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template).
 - [Angular Essentials (Version 18)](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials).
 
 Repositorio hecho en base al material de:
